@@ -1,0 +1,14 @@
+<div class="list" >
+        <div class="list__title">{{day.text}}</div>
+        <div class="cards" *ngIf="(cards$ | async).length">
+                <app-card *ngFor="let card of cards$ | async" [card]="card" ></app-card>     
+        </div>
+        <mat-form-field class="new-task__input" *ngIf="displayAddCard" appearance="outline">
+            <mat-label>Task</mat-label>
+            <input matInput placeholder="Type here.." [(ngModel)]="newTask" (keyup.enter)="addCard()">
+            <button mat-icon-button matSuffix (click)="resetTask()">
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </mat-form-field>
+        <button *ngIf="!displayAddCard" (click)="displayAddCard = true" mat-raised-button>+</button>
+</div>

@@ -1,0 +1,36 @@
+.mat-tab-group{
+    background-color: #dad2ad;
+}
+
+.mat-tab-label.mat-tab-label-active{
+    background-color: #706a4f;
+}
+
+.mat-tab-label{
+    color: #dad2ad;
+}
+
+.mat-tab{
+    font-family: 'TimesNewRoman';
+  }
+
+ .mat-ink-bar {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
+    color: #000000;
+}
+
+::ng-deep .mat-tab-label{
+    color: black;
+    background: #fdf4cb;
+    border-radius: 15px 15px 0 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.div{
+    background-color: black;
+    background-size: 100% 100%;
+}

@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100%; 
+  color: #dad2ad;
+}
+
+body { margin: 0; font-family: "TimesNewRoman"; }
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: rgba(0, 0, 0, 0.332);
+    height: 4px;
+  } 
+  

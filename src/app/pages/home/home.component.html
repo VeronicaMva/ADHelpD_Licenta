@@ -1,0 +1,34 @@
+<div class="background">
+  <div class="content">
+    <div *ngIf="!about;else aboutUs">
+      <h2>Welcome!</h2>
+    </div>
+    <ng-template #aboutUs>
+      <h2 style="font-size: 4em;">About ADHelpD:</h2>
+    </ng-template>
+      <button mat-button *ngIf="!about" (click)="about = !about" style="margin-top:100px; margin-left: -50px;">More         </button>
+      <div class="about-1" *ngIf="about" style="margin-top: 50px; margin-left: -250px;">
+          You probably kow how it feels to forget important stuff from paying the phone bill and maybe even a friend's birthday. 
+          <!-- <img src="assets/images/arrow.png" alt="arrow" class="image-1"> -->
+        </div>
+      <div class="about-2" *ngIf="about" style="margin-top: 150px; margin-left: -250px;">
+        Maybe you didn't forget about but kept postponing them because you thought you can manage to do all the chores in one day. 
+        <!-- <img src="assets/images/arrow.png" alt="arrow" class="image-2"> -->
+      </div>
+      <div class="about-3" *ngIf="about" style="margin-top: 250px; margin-left: -250px;">
+        We are here to help you VISUALISE all your schedule so you can keep track of things you did, things that need to be done. 
+        <!-- <img src="assets/images/arrow.png" alt="arrow" class="image-3"> -->
+      </div>
+      <div class="about-4" *ngIf="about" style="margin-top: 350px; margin-left: -250px;">
+        I hope this helps even a little bit with the struggle that not many can see! 
+        <!-- <img src="assets/images/arrow.png" alt="arrow" class="image-4"> -->
+      </div>
+      <button mat-button *ngIf="about" (click)="about = !about" style="margin-top:450px; margin-left: -50px;">Close</button>
+  </div>
+  <img src="assets/images/brain.png" alt="brain" class="image-5">
+  <img *ngIf="!about" src="assets/images/bulb.png" alt="bulb" class="image-6">
+  <img src="assets/images/qmark.png" alt="qmark" class="image-7">
+  <img src="assets/images/guyask.png" alt="guyask" class="image-8">
+  <img src="assets/images/happy.png" alt="happy" class="image-9">
+</div>
+

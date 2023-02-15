@@ -1,0 +1,60 @@
+.mat-toolbar{
+  background-color: #000000;
+  color:  #dad2ad;
+  font-family: "TimesNewRoman";
+  font-size: xx-large;
+}
+
+.spacer {
+  flex: 1 0;
+}
+
+.mat-button{
+  font-family: 'TimesNewRoman';
+  font-size: large;
+}
+
+
+::ng-deep .mat-select-value-text{
+  font-size: large;
+  
+}
+
+::ng-deep .mat-option-text{
+  font-size: large;
+  color: #264d59;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.mat-toolbar{
+display: flex;
+flex-direction: row;
+
+}
+
+::ng-deep .mat-form-field-wrapper{
+  height: 60px!important;
+  background-color: inherit!important;
+  margin-bottom: 50px;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 60px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  overflow-y: scroll;
+  background: whitesmoke
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+:ng-deep .mat-form-field-infix{
+  padding: 0px!important;
+}

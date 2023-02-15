@@ -1,0 +1,73 @@
+.body{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.card {
+	background: #FFFFFE;
+	border: 2px solid #00000049;
+	padding: 15px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card__input {
+	height: fit-content ;
+	width: 96%;
+	padding: 5px;
+}
+
+.card:hover .card__edit-btn {
+	opacity: 1;
+}
+
+.card__edit-btn {
+	opacity: 0;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+}
+
+
+::ng-deep .mat-checkbox{
+	margin-left: 250px;
+}
+
+.card__label {
+color: black !important;
+}
+
+::ng-deep .mat-form-field-appearance-legacy.mat-focused .mat-form-field-underline .mat-form-field-ripple{
+	color:black!important;
+	background-color: black!important;
+}
+
+::ng-deep .mat-checkbox-ripple .mat-ripple-element,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: black !important;
+}
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background,
+::ng-deep .mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: #65917a !important;
+}
+
+::ng-deep .mat-checkbox-inner-container-no-side-margin {
+	margin-top: -35px!important;
+	border-width: 2px;
+}
+
+::ng-deep .mat-checkbox-frame {
+	border-width: 3px!important;
+	border-color: #65917a!important;
+}
+
+.mat-form-field{
+	margin-bottom: -50px;
+}
+
+::ng-deep .mat-icon{
+	font-size: 27px!important;
+}

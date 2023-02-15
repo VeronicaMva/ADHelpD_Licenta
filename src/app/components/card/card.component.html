@@ -1,0 +1,15 @@
+<mat-form-field *ngIf="isEditMode; else default" class="card__input" >
+    <mat-label class="card__label">Task</mat-label>
+    <input matInput class="card__input"placeholder="Type here..." [(ngModel)]="card.description" (keyup.enter)="edit()" >
+    <button mat-icon-button matSuffix (click)="remove()" >
+            <mat-icon style="margin-bottom: 27px;">delete</mat-icon>
+    </button>
+    <mat-checkbox [(ngModel)]="this.card.color"></mat-checkbox>
+</mat-form-field>
+
+<ng-template #default>
+    <div class="card" [id]="card.id" [ngStyle]="{ 'background-color': this.card.color ? '#A0D5BA' : 'white' }">
+        {{card.description}}
+        <mat-icon class="card__edit-btn" (click)="isEditMode = true">edit</mat-icon>
+    </div>
+</ng-template>

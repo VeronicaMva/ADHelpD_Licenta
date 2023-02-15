@@ -1,0 +1,18 @@
+<mat-toolbar>
+    <span>
+        <img src="../../../assets/images/brain.png" style="width: 30px; height: 30px;">ADHelpD
+    </span>
+    <a mat-button style="color: white" (click)="goToHome()">Home</a>
+    <a mat-button style="color: white" (click)="goToOrganize()">Organize</a>
+    <a mat-button style="color: white" (click)="goToBreak()">Take a break</a>
+    <span class="spacer"></span>
+    <mat-form-field *ngIf="organize">
+        <mat-select [(ngModel)]="selectedMonth" (ngModelChange)="onChange($event)">
+            <mat-option *ngFor="let month of months" [value]="month.value">
+            {{ month.text }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-toolbar>
+<router-outlet></router-outlet>
+

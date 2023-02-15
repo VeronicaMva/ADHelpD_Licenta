@@ -1,0 +1,6 @@
+<mat-card *ngFor="let week of weeks">
+    <mat-card-title>{{week.text}}</mat-card-title>
+    <mat-card-content>
+        <app-board type="payments" [week]="week"  [month]="selectedMonth"></app-board>
+    </mat-card-content> 
+</mat-card>
