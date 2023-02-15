@@ -26,7 +26,6 @@ export class CardComponent implements OnInit {
   }
 
   edit() {
-    debugger
     this.cardRxjsStore.editCard(this.card, this.card.color);
     this.isEditMode = false;
   }
